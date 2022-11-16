@@ -16,7 +16,7 @@ namespace Ex_02.Controllers
 
         }
 
-        public IActionResult Index() //Index/agregar vista/vista razor / (index/list/Product..p2../)
+        public IActionResult Index() 
         {
 
             return View(this.repository.GetProducts());
