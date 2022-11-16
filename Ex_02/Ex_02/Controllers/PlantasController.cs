@@ -16,7 +16,7 @@ namespace Ex_02.Controllers
 
         }
 
-        public IActionResult Index () 
+        public IActionResult Index() 
         {
 
             return View(this.repository.GetProducts());
