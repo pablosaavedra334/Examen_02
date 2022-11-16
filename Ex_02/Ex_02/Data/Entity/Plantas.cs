@@ -55,6 +55,18 @@ namespace Ex_02.Data.Entity
         public string Color { get; set; } = null!;
 
 
+        [Display(Name = "Temperatura")]
+        public string Temperatura { get; set; } = null!;
+
+        [Display(Name = "Dias")]
+        [Required]
+        public string Dias { get; set; } = null!;
+
+
+        [Display(Name = "Tamaño")]
+        [Required]
+        public string Tamaño { get; set; } = null!;
+
 
         //[Display(Name = "Color")]
         //[Required]
