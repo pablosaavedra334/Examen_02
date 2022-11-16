@@ -1,0 +1,83 @@
+﻿@model Ex_02.Data.Entity.Plantas
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Plantas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tipo" class="control-label"></label>
+                <input asp-for="Tipo" class="form-control" />
+                <span asp-validation-for="Tipo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Años" class="control-label"></label>
+                <input asp-for="Años" class="form-control" />
+                <span asp-validation-for="Años" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Precio" class="control-label"></label>
+                <input asp-for="Precio" class="form-control" />
+                <span asp-validation-for="Precio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plantación" class="control-label"></label>
+                <input asp-for="Plantación" class="form-control" />
+                <span asp-validation-for="Plantación" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plantines" class="control-label"></label>
+                <input asp-for="Plantines" class="form-control" />
+                <span asp-validation-for="Plantines" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Disponible" /> @Html.DisplayNameFor(model => model.Disponible)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Color" class="control-label"></label>
+                <input asp-for="Color" class="form-control" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Temperatura" class="control-label"></label>
+                <input asp-for="Temperatura" class="form-control" />
+                <span asp-validation-for="Temperatura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dias" class="control-label"></label>
+                <input asp-for="Dias" class="form-control" />
+                <span asp-validation-for="Dias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tamaño" class="control-label"></label>
+                <input asp-for="Tamaño" class="form-control" />
+                <span asp-validation-for="Tamaño" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
